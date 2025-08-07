@@ -1,0 +1,273 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.top-bar {
+  background-color: #005580 !important;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.top-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-bar-left span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  color: white;
+}
+
+.top-bar-right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.top-bar-right li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-bar-right li a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  background-color: #2094f3;
+}
+
+.navbar-brand span {
+  display: block;
+  line-height: 1.2;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  position: relative;
+  margin: 0 10px;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.icon-btn {
+  color: white;
+  font-size: 1.2rem;
+  position: relative;
+  margin: 0 12px;
+}
+
+.notif-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  line-height: 1;
+}
+
+.btn-register {
+  background-color: white;
+  color: #2094f3;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 6px 18px;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-register:hover {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  text-decoration: none;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    justify-content: start !important;
+  }
+
+  .top-bar {
+    text-align: center;
+  }
+}
+.search-wrapper {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-toggle {
+  display: none;
+}
+
+.search-icon-label {
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+
+.search-input {
+  width: 0;
+  padding: 0;
+  border: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+  margin-left: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.search-toggle:checked ~ .search-input {
+  width: 150px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  opacity: 1;
+}
+/*  */
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.login-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.image-side {
+  flex: 1;
+}
+
+.image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.form-side {
+  flex: 1;
+  padding: 60px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+  .image-side {
+    display: none;
+  }
+  .form-side {
+    padding: 40px 20px;
+  }
+}
+.footer-section {
+  background-color: #1c2230;
+  color: #adb5bd;
+  padding: 3rem 0 1.5rem;
+  font-family: sans-serif;
+}
+
+.footer-title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer-desc {
+  color: #adb5bd;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  font-size: 1.25rem;
+  color: #adb5bd;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+}
+
+.footer-list,
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #adb5bd;
+}
+
+.footer-list li,
+.contact-list li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-list a {
+  color: #adb5bd;
+  text-decoration: none;
+}
+
+.footer-list a:hover {
+  color: #ffffff;
+}
+
+.footer-divider {
+  border-color: #2c3347;
+  margin: 2rem 0 1rem;
+}
+.legal-links a {
+  text-decoration: none;
+  color: white;
+}
+.legal-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}

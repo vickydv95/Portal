@@ -1,0 +1,273 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+.top-bar {
+  background-color: #005580 !important;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;                
+  align-items: center;
+}
+
+.top-bar li a {
+  color: white;             
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-bar li a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  background-color: #2094f3;
+}
+
+.navbar-brand span {
+  display: block;
+  line-height: 1.2;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  position: relative;
+  margin: 0 10px;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.icon-btn {
+  color: white;
+  font-size: 1.2rem;
+  position: relative;
+  margin: 0 12px;
+}
+
+.notif-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  line-height: 1;
+}
+
+.btn-register {
+  background-color: white;
+  color: #2094f3;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 6px 18px;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-register:hover {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  text-decoration: none;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    justify-content: start !important;
+  }
+
+  .top-bar {
+    text-align: center;
+  }
+}
+.search-wrapper {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-toggle {
+  display: none;
+}
+
+.search-icon-label {
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+
+.search-input {
+  width: 0;
+  padding: 0;
+  border: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+  margin-left: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.search-toggle:checked ~ .search-input {
+  width: 150px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  opacity: 1;
+}
+
+h3 {
+  font-weight: 600;
+  color: #343a40;
+}
+
+.contact-img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-info {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  font-size: 1rem;
+}
+
+.contact-info i {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #0d6efd;
+  vertical-align: middle;
+}
+
+.contact-info p {
+  margin-bottom: 0.8rem;
+}
+
+.contact-info strong {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  color: #495057;
+}
+
+.form-control {
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.form-check-input:checked {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+textarea.form-control {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  padding: 10px 24px;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+h3{
+    color: #2094F3;
+}
+.footer-section {
+  background-color: #1c2230;
+  color: #adb5bd;
+  padding: 3rem 0 1.5rem;
+  font-family: sans-serif;
+}
+
+.footer-title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer-desc {
+  color: #adb5bd;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  font-size: 1.25rem;
+  color: #adb5bd;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+}
+
+.footer-list,
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #adb5bd;
+}
+
+.footer-list li,
+.contact-list li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-list a {
+  color: #adb5bd;
+  text-decoration: none;
+}
+
+.footer-list a:hover {
+  color: #ffffff;
+}
+
+.footer-divider {
+  border-color: #2c3347;
+  margin: 2rem 0 1rem;
+}
+.legal-links a{
+  text-decoration: none;
+  color:white;
+}
+.legal-links{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
